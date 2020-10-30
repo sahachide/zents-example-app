@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>ZenTS Example</title>    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />    
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css" />
+    <style>
+        .logo {
+            margin-top: 2.5rem;
+            margin-bottom: 8rem;
+        }
+
+        h2 {
+            margin-bottom: 1.25rem;
+        }
+
+        .description {
+            margin-bottom: 5.5rem;
+        }
+
+        a, 
+        a:visited {
+            color: #6970e8;
+        }
+
+        a:hover, 
+        a:active {
+            color: #4148c0;
+        }
+
+        footer {
+            font-size: 0.75em;
+            margin-top: 2.85rem;
+        }
+    </style>
+  </head>
+  <body>
+    <main>     
+      <section>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-8">
+              <div class="text-center">
+                <img class="logo" src="/public/img/logo.png" alt="ZenTS" />
+                <h2>Welcome to your ZenTS app!</h2>
+                <p class="description">
+                  For detailed guides and recipies on how to configure this project, check out the <a href="https://zents.dev" target="_blank">ZenTS documentation</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h5><a href="https://zents.dev/guide/advancedguides/controllers">Controller &amp; Routing</a></h5>
+                <p>
+                   Super fast and easy to maintain routing system with simple to use controller architecture.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h5><a href="https://zents.dev/guide/advancedguides/dependency_injection">Dependency Injection</a></h5>
+                <p>
+                   Over are the times of over complicated object initialization. All tools ready at your fingertips to build SOLID applications.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h5><a href="https://zents.dev/guide/advancedguides/services">Service Container</a></h5>
+                <p>
+                   Flexible service container system that helps you to write reusable code.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h5><a href="https://zents.dev/guide">Autoloading</a></h5>
+                <p>
+                   Never handle a list of project files somewhere, because ZenTS will load all your project files automatically.
+                </p>
+            </div>     
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h5><a href="https://zents.dev/guide/advancedguides/database">ORM &amp; Redis</a></h5>
+                <p>
+                   Supports MySQL, PostgreSQL, MariaDB, SQLite, MS SQL Server, MongoDB and Redis out-of-the-box.
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <h5><a href="https://zents.dev/guide/advancedguides/templates">Template Engine</a></h5>
+                <p>
+                   An (optional) battle tested template engine for rendering server side HTML.
+                </p>
+            </div>                      
+          </div>
+        </div>
+      </section>      
+    </main>     
+    <footer class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                ZenTS is licenced under the MIT License. 
+                <br />
+                Now: {{ now }}
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
