@@ -13,7 +13,7 @@ export default class extends Controller {
     })
   }
 
-  @get('hello/:world')
+  @get('/hello/:world')
   public async helloWorld(@params params: { world: string }) {
     return await this.render('hello', {
       greetings: `Hello ${params.world}`,
@@ -21,7 +21,7 @@ export default class extends Controller {
     })
   }
 
-  @post('product')
+  @post('/product')
   public async newProduct(@body body: { name: string; price: number }) {
     log.success(`Product name: ${body.name}`)
     log.success(`Product price: ${body.price}`)
